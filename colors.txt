@@ -1,0 +1,5 @@
+bg = 36,41,49
+blue = 71,190,199
+blue_hovered = 56,153,161
+green = 112,189,53
+green_hovered = 89,151,42

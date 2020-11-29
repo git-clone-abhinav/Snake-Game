@@ -97,8 +97,8 @@ class game():
 class startmenu():
     def __init__(self):
         self.screen = pg.display.set_mode((800,450))
-        self.b1 = '(150, 300,100,50),"Start", [(0,255,0), (0,150,0)], action = self.start'
-        self.b2 = '(550, 300,100,50),"Exit", [(255,0,0), (150,0,0)], action = self.exit'
+        self.b1 = '(150, 300,100,50),"Continue", [(71,190,199), (56,153,161)], action = self.start'
+        self.b2 = '(550, 300,100,50),"Exit", [(112,189,53), (89,151,42)], action = self.exit'
         self.buttons = [self.b1, self.b2]
         self.blocks = []
         self.size = 1
@@ -168,8 +168,8 @@ class startmenu():
         self.make_text((pos[0]+pos[2]/2), (pos[1]+pos[3]/2), text, a = True, size=textsize)
     def mainloop(self):
         while 1:
-            self.screen.fill((35,38,117))
-            self.make_text(400, 150, 'CC Network Solutions', color = (255,255,255), size = 50, a = True)
+            self.screen.fill((36,41,49))
+            self.make_text(400, 150, 'CC Network Solutions', color = (71,190,199), size = 50, a = True)
             for event in pg.event.get():
                 if event.type == pg.QUIT:
                     sys.exit()
