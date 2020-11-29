@@ -187,16 +187,16 @@ class startmenu():
                             self.click0 = False
             pg.display.update()
     def start(self):
-        self.b1 = '(150, 300,100,50),"Normal", [(0,255,0), (0,150,0)], action = self.start3'
-        self.b2 = '(550, 300,100,50),"Big", [(0,255,0), (0,150,0)], action = self.start4'
+        self.b1 = '(150, 300,100,50),"Check Files", [(0,255,0), (0,150,0)], action = self.start3'
+        self.b2 = '(550, 300,100,50),"Exit", [(0,255,0), (0,150,0)], action = self.exit'
         self.buttons = [self.b1,self.b2]
     def start3(self):
-        self.b1 = '(150, 300,100,50),"Easy", [(0,255,0), (0,150,0)], action = self.e'
-        self.b2 = '(283, 300,100,50),"Normal", [(0,255,0), (0,150,0)], self.n'
-        self.b3 = '(417, 300,100,50),"Hard", [(0,255,0), (0,150,0)], action = self.h'
-        self.b4 = '(550, 300,100,50),"Expert", [(0,255,0), (0,150,0)], action = self.ex'
+        self.b1 = '(150, 300,100,50),"Conf", [(0,255,0), (0,150,0)], action = self.c'
+        self.b2 = '(283, 300,100,50),"S.Conf", [(0,255,0), (0,150,0)], self.s'
+        self.b3 = '(417, 300,100,50),"IP.Conf", [(0,255,0), (0,150,0)], action = self.ip'
+        self.b4 = '(550, 300,100,50),"Exit", [(0,255,0), (0,150,0)], action = self.exit'
         self.buttons = [self.b1, self.b2,self.b3,self.b4]
-    def start4(self):
+    '''def start4(self):
         self.size = 2
         self.b1 = '(150, 300,100,50),"Easy", [(0,255,0), (0,150,0)], action = self.e'
         self.b2 = '(283, 300,100,50),"Normal", [(0,255,0), (0,150,0)], self.n'
@@ -210,7 +210,13 @@ class startmenu():
     def h(self):
         start(1, self.size)
     def ex(self):
-        start(2, self.size)
+        start(2, self.size)'''
+    def c(self):
+        start(0.25, self.size)
+    def s(self):
+        start(0.5, self.size)
+    def ip(self):
+        start(1, self.size)
     def exit(self):
         sys.exit()
 def start(speed,size):
